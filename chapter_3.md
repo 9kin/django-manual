@@ -15,6 +15,15 @@ db.sqlite3
 git clone https://github.com/name/repository.git
 mkvirtualenv myenv --python=/usr/bin/python3.7
 pip install ваши библиотеки
+В settings.py надо добавить 
+```python
+DEBUG = False
+ALLOWED_HOSTS = ['*']
+MEDIA_ROOT = u'/home/account/django_projec/media'
+MEDIA_URL = '/media/'
+STATIC_ROOT = u'/home/account/django_project/static'
+STATIC_URL = '/static/'
+```
 `python3 manage.py migrate`
 `python3 manage.py collectstatic`
 4.  на pythonanywhere создаём новый web проект выбираем python3.7
@@ -32,16 +41,7 @@ application = get_wsgi_application()
 ```
 6. Static files:
 url: static
-Directory/home/9kin/django-site-book/static
+Directory/home/account/django_projec/django-site-book/static
 7. Virtualenv: myenv
-8. В settings.py надо добавить 
-```python
-DEBUG = False
-ALLOWED_HOSTS = ['*']
-MEDIA_ROOT = u'/home/account/django_projec/media'
-MEDIA_URL = '/media/'
-STATIC_ROOT = u'/home/account/django_project/static'
-STATIC_URL = '/static/'
-```
-9. Нажимаем на Reload
-10. Сайт готов.
+8. Нажимаем на Reload
+9. Сайт готов.
