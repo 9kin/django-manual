@@ -15,6 +15,8 @@ db.sqlite3
 git clone https://github.com/name/repository.git
 mkvirtualenv myenv --python=/usr/bin/python3.7
 pip install ваши библиотеки
+`python3 manage.py migrate`
+`python3 manage.py collectstatic`
 4.  на pythonanywhere создаём новый web проект выбираем python3.7
 далее custom.
 5. В настройках проекта WSGI configuration file меняем на 
@@ -41,8 +43,5 @@ MEDIA_URL = '/media/'
 STATIC_ROOT = u'/home/account/django_project/static'
 STATIC_URL = '/static/'
 ```
-9. заходим в bash
-`python3 manage.py migrate`
-`python3 manage.py collectstatic`
-10. Нажимаем на Reload
-11. Сайт готов.
+9. Нажимаем на Reload
+10. Сайт готов.
