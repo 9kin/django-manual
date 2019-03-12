@@ -41,7 +41,7 @@ application = get_wsgi_application()
 ```
 6. Static files:
 url: static
-Directory/home/account/django_projec/django-site-book/static
+Directory/home/account/django_project/static
 7. Virtualenv: myenv
 8. Нажимаем на Reload
 9. Сайт готов.
