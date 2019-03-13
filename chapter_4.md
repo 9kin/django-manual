@@ -73,8 +73,8 @@ class HomePageView(ListView):
 ```
 Если вы запускаете веб-сервер с помощью `python manage.py runserver` и перейдите на http://127.0.0.1:8000/ вы можете увидеть нашу новую домашнюю страницу.
 
-![](http://i.imgur.com/moD4n7q.png)
+![](http://i.imgur.com/KEy4KFe.png)
 
 Добавив запись в базу данных и обновив страницу мы увидим.
 
-![](http://i.imgur.com/0TAsoek.png)
+![](http://i.imgur.com/dJjm6W5.png)
