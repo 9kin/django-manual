@@ -6,13 +6,15 @@ db.sqlite3
 *.pyc
 *.python
 ```
-    ```bash
+
+```bash
 git init
-    git add .
-    git commit -m "pythonanywhere"
-    git remote add origin  https://github.com/name/repository.git
-    git push -u origin master
+git add .
+git commit -m "pythonanywhere"
+git remote add origin  https://github.com/name/repository.git
+git push -u origin master
 ```
+
 2. регистрируемя на pythonanywhere выбираем бесплатный аккаунт
 3. заходи в bash с помощью cd .. спускаумся в корневой каталог.
 Текущий каталог можно проверить pwd.
