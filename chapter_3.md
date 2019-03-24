@@ -1,14 +1,18 @@
 заливаем на pythonanywhere
 1. создадим на github репозиторий.
 Для начала создайте файл .gitignore для исключения файлов на индексацию при комитах, 
+```bash
 db.sqlite3
 *.pyc
 *.python
-    git init
+```
+    ```bash
+git init
     git add .
     git commit -m "pythonanywhere"
     git remote add origin  https://github.com/name/repository.git
     git push -u origin master
+```
 2. регистрируемя на pythonanywhere выбираем бесплатный аккаунт
 3. заходи в bash с помощью cd .. спускаумся в корневой каталог.
 Текущий каталог можно проверить pwd.
@@ -27,6 +31,7 @@ STATIC_URL = '/static/'
 ```
 `python3 manage.py migrate`
 `python3 manage.py collectstatic`
+
 7.  на pythonanywhere создаём новый web проект выбираем python3.7
 далее custom.
 8. В настройках проекта WSGI configuration file меняем на 
