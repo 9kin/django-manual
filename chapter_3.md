@@ -12,9 +12,9 @@ db.sqlite3
 2. регистрируемя на pythonanywhere выбираем бесплатный аккаунт
 3. заходи в bash с помощью cd .. спускаумся в корневой каталог.
 Текущий каталог можно проверить pwd.
-1. git clone https://github.com/name/repository.git
-2. mkvirtualenv myenv --python=/usr/bin/python3.7
-3. pip install -r requirements.txt
+4. git clone https://github.com/name/repository.git
+5. mkvirtualenv myenv --python=/usr/bin/python3.7
+6. pip install -r requirements.txt
 (зависмости вашего проекта requirements.txt pip freeze > requirements.txt)
 В settings.py надо добавить 
 ```python
@@ -27,9 +27,9 @@ STATIC_URL = '/static/'
 ```
 `python3 manage.py migrate`
 `python3 manage.py collectstatic`
-4.  на pythonanywhere создаём новый web проект выбираем python3.7
+7.  на pythonanywhere создаём новый web проект выбираем python3.7
 далее custom.
-5. В настройках проекта WSGI configuration file меняем на 
+8. В настройках проекта WSGI configuration file меняем на 
 ```python
 import os
 import sys
@@ -40,9 +40,9 @@ os.environ['DJANGO_SETTINGS_MODULE'] = 'app_name.settings'
 from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
 ```
-6. Static files:
+9. Static files:
 url: static
 Directory/home/account/django_project/static
-7. Virtualenv: myenv
-8. Нажимаем на Reload
-9. Сайт готов.
+10. Virtualenv: myenv
+11. Нажимаем на Reload
+12. Сайт готов.
