@@ -12,10 +12,10 @@ db.sqlite3
 2. регистрируемя на pythonanywhere выбираем бесплатный аккаунт
 3. заходи в bash с помощью cd .. спускаумся в корневой каталог.
 Текущий каталог можно проверить pwd.
-git clone https://github.com/name/repository.git
-mkvirtualenv myenv --python=/usr/bin/python3.7
-(requirements.txt) pip freeze > requirements.txt 
-pip install -r requirements.txt
+1. git clone https://github.com/name/repository.git
+2. mkvirtualenv myenv --python=/usr/bin/python3.7
+3. pip install -r requirements.txt
+(зависмости вашего проекта requirements.txt pip freeze > requirements.txt)
 В settings.py надо добавить 
 ```python
 DEBUG = False
