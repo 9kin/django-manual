@@ -14,7 +14,8 @@ db.sqlite3
 Текущий каталог можно проверить pwd.
 git clone https://github.com/name/repository.git
 mkvirtualenv myenv --python=/usr/bin/python3.7
-pip install ваши библиотеки
+(requirements.txt) pip freeze > requirements.txt 
+pip install -r requirements.txt
 В settings.py надо добавить 
 ```python
 DEBUG = False
